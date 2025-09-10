@@ -40,3 +40,47 @@
         }
     }
 }
+
+@media (max-width: 831px){
+    .footer{
+        &__title{
+            font-size: 36px;
+        }
+
+        &__text{
+            font-size: 26px;
+        }
+
+        &__item-text{
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 602px){
+    .footer{
+        &__title{
+            font-size: 30px;
+        }
+
+        &__text{
+            font-size: 22px;
+        }
+
+        &__item-text{
+            font-size: 20px;
+        }
+
+        &__inner{
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 522px){
+    .footer{
+        &__title{
+            text-align: center;
+        }
+    }
+}

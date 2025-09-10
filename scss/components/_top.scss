@@ -1,51 +1,51 @@
-.top{
+.top {
     // padding: 189px 0 180px;
     padding: 85px 0;
 
-    &__inner{
+    &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
     }
 
-    &__texts{
+    &__texts {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 36px;
     }
 
-    &__title{
+    &__title {
         font-size: 64px;
         font-weight: 800;
     }
 
-    &__details{
+    &__details {
         display: flex;
         align-items: center;
         gap: 11px;
     }
 
     &__location,
-    &__age{
+    &__age {
         display: flex;
         align-items: center;
         gap: 5px;
 
-        span svg{
+        span svg {
             fill: #474A57;
         }
     }
 
     &__location-text,
-    &__age-text{
+    &__age-text {
         font-size: 25px;
         font-weight: 600;
         color: #474A57;
     }
 
-    &__btn{
+    &__btn {
         padding: 12px 21px;
         min-height: 63px;
         border-radius: 16px;
@@ -58,15 +58,46 @@
         box-shadow: 6px 6px 0px #009c88;
     }
 
-    &__img{
+    &__img {
         max-width: 400px;
         height: auto;
         overflow: hidden;
         border-radius: 20px;
     }
 
-    &__picture{
+    &__picture {
         width: 100%;
         height: 100%;
     }
 }
+
+
+@media (max-width: 991px) {
+    .top__title {
+        font-size: 45px;
+    }
+
+    .top__age-text,
+    .top__location-text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 575px){
+    .top{
+        padding: 40px 0;
+        
+        &__inner{
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &__texts{
+            align-items: center;
+        }
+
+        &__title{
+            text-align: center;
+        }
+    }
+} 

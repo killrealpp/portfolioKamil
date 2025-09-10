@@ -1,26 +1,26 @@
-.work{
+.work {
     padding: 70px 0;
     background-color: #EB7711;
 
-    &__inner{
+    &__inner {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 85px;
     }
 
-    &__title{
+    &__title {
         font-size: 64px;
         font-weight: 800;
     }
 
-    &__items{
+    &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
     }
 
-    &-item{
+    &-item {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -31,28 +31,28 @@
         padding: 100px 40px 40px;
         position: relative;
 
-        &__title{
+        &__title {
             font-size: 33px;
             font-weight: 800;
             color: var(--white-color);
             text-align: center;
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 24px;
             font-weight: 700;
             color: var(--white-color);
             text-align: center;
         }
 
-        &__text{
+        &__text {
             font-size: 18px;
             font-weight: 600;
             color: var(--white-color);
         }
     }
 
-    &__number{
+    &__number {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -71,9 +71,77 @@
 }
 
 
-.work-bottom{
+.work-bottom {
     margin-bottom: 25px;
     padding-top: 25px;
-
-
 }
+
+@media (max-width: 1075px) {
+    .work {
+        &__title {
+            font-size: 45px;
+        }
+
+        &-item {
+            padding: 100px 20px 20px;
+
+            &__title {
+                font-size: 28px;
+            }
+
+            &__subtitle {
+                font-size: 20px;
+            }
+
+            &__text {
+                font-size: 15px;
+            }
+        }
+
+        &__items {
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 867px) {
+    .work {
+        &-item {
+            padding: 70px 20px 35px;
+
+            &__text{
+                text-align: center;
+            }
+        }
+
+        &-bottom{
+            padding-top: 0;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .work{
+        padding: 40px 0;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .work{
+        &__items{
+            gap: 60px;
+        }
+
+        &__title{
+            text-align: center;
+        }
+    }
+} 

@@ -1,4 +1,4 @@
-.header{
+.header {
     // position: fixed;
     // top: 0;
     // left: 0;
@@ -6,7 +6,7 @@
     background-color: var(--text-color);
     padding: 25px 0;
 
-    &__inner{
+    &__inner {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -15,26 +15,117 @@
     }
 }
 
-.menu{
-    &__list{
+.menu {
+    &__list {
         display: flex;
         align-items: center;
         gap: 50px;
     }
 
-    &__item{
+    &__item {
         border-bottom: 3px solid transparent;
         color: var(--white-color);
         transition: all 0.3s ease;
 
-        &:hover{
+        &:hover {
             color: var(--accent-color);
             border-bottom: 3px solid var(--accent-color);
         }
     }
 
-    &__link{
+    &__link {
         font-size: 36px;
         font-weight: 600;
     }
+}
+
+
+.menu-toggle {
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    display: none;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.menu-toggle::before,
+.menu-toggle::after,
+.menu-toggle span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.menu-toggle::before {
+    content: '';
+    left: 0;
+    top: 0;
+}
+
+.menu-toggle::after {
+    content: '';
+    left: 0;
+    bottom: 0;
+}
+
+.menu-toggle span {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.menu-toggle.active::before {
+    rotate: 45deg;
+    top: 16px;
+}
+
+.menu-toggle.active::after {
+    rotate: -45deg;
+    bottom: 10px;
+}
+
+.menu-toggle.active span {
+    opacity: 0;
+}
+
+
+@media (max-width: 1012px) {
+    .menu__link {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu__link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 667px) {
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .menu__link{
+        color: var(--text-color)
+    }
+
+    .menu__list {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 50px 0;
+        transition: all 0.7s ease;
+    }
+    
 }
