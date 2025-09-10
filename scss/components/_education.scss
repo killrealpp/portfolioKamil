@@ -1,0 +1,44 @@
+.education{
+    padding: 70px 0;
+
+    &__inner{
+        background-color: #106EE8;
+        border-radius: 20px;
+        padding: 88px 55px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__img{
+        max-width: 525px;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__picture{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__content{
+        max-width: 644px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__title{
+        font-size: 64px;
+        font-weight: 800;
+        color: var(--white-color)
+    }
+    &__text{
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--white-color)
+    }
+}

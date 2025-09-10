@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru")
+  head
+    block variables
+      - var title = "Мой сайт"
+      - var links = ["css/main.css"]
+    include ../components/head.pug
+
+  body
+    .wrapper
+      include ../components/header.pug
+
+      main.main
+        block content
+
+      include ../components/footer.pug
+
+    block scripts
+      script(src="js/index.js" type="module")

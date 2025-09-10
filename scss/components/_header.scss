@@ -1,0 +1,40 @@
+.header{
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    background-color: var(--text-color);
+    padding: 25px 0;
+
+    &__inner{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__item{
+        border-bottom: 3px solid transparent;
+        color: var(--white-color);
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: var(--accent-color);
+            border-bottom: 3px solid var(--accent-color);
+        }
+    }
+
+    &__link{
+        font-size: 36px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,15 @@
+extends ../layouts/base.pug
+
+block variables
+  - var title = "Главная"
+  - var links = ["./css/lib/swiper.min.css", "./css/main.css"]
+
+block content
+    include ../components/top.pug
+    include ../components/education.pug
+    include ../components/work.pug
+    include ../components/contact.pug
+
+block scripts
+  //- script(src="js/lib/swiper.min.js")
+  script(src="js/index.js" type="module")

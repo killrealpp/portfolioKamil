@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --bg-color: #ffffff;
+  --white-color: #fff;
+  --text-color: #18191F;
+  --main-color: #0ACF83;
+  --accent-color: #FFDD55;
+  --container-width: 1280px;
+  --container-inline-padding: 0 15px;
+}
+
+body {
+  font-size: 24px;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+//   gap: 48px;  для отступов между хедером мейном и футером
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  // gap: 50px; 
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-inline: var(--container-inline-padding);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  transition: all 0.4s ease;
+  
+  &:hover{
+    transform: scale(0.95);
+  }
+}

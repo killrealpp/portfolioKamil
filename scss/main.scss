@@ -1,0 +1,13 @@
+// Базовые стили
+@use "base/fonts";
+@use "base/reset";
+@use "base/global";
+@use "base/utils";
+
+// Компоненты
+@use "components/header";
+@use "components/footer";
+@use "components/top";
+@use "components/education";
+@use "components/work";
+@use "components/contact";
