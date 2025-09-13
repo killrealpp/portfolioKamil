@@ -44,7 +44,7 @@ body {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding-inline: var(--container-inline-padding);
+  padding: var(--container-inline-padding);
 }
 
 .icon {
@@ -60,3 +60,4 @@ body {
     transform: scale(0.95);
   }
 }
+

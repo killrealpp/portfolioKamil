@@ -95,6 +95,17 @@
 }
 
 
+.translate{
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+
+
 @media (max-width: 1012px) {
     .menu__link {
         font-size: 25px;

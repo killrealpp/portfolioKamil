@@ -21,11 +21,12 @@
             <button class="menu-toggle" type="button"><span></span></button>
             <nav class="menu"> 
               <ul class="menu__list"> 
-                <li class="menu__item"><a class="menu__link" href="#education">Образование</a></li>
-                <li class="menu__item"><a class="menu__link" href="#work">Опыт работы </a></li>
-                <li class="menu__item"><a class="menu__link" href="#contacts">Контакты </a></li>
+                <li class="menu__item"><a class="menu__link" href="#education" data-translate="menu1">Образование</a></li>
+                <li class="menu__item"><a class="menu__link" href="#work" data-translate="menu2">Опыт работы </a></li>
+                <li class="menu__item"><a class="menu__link" href="#contacts" data-translate="menu3">Контакты </a></li>
               </ul>
             </nav>
+            <button class="translate btn">ru</button>
           </div>
         </div>
       </header>
@@ -34,16 +35,16 @@
           <div class="container"> 
             <div class="top__inner"> 
               <div class="top__texts"> 
-                <h1 class="top__title">Галиуллин Камиль Ниязович</h1>
+                <h1 class="top__title" data-translate="myName">Галиуллин Камиль Ниязович</h1>
                 <div class="top__details"> 
                   <div class="top__location"> <span class="icon">
                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="#000000"><path fill="#000000" d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4a2 2 0 0 0 0 4z"/></svg></span>
-                    <p class="top__location-text">Казань</p>
+                    <p class="top__location-text" data-translate="city">Казань</p>
                   </div>
                   <div class="top__age"> <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000"><path fill="#000000" d="M21 17.75A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25A3.25 3.25 0 0 1 6.25 3h11.5A3.25 3.25 0 0 1 21 6.25v11.5Zm-4-10a.75.75 0 0 0-.648-.743L16.25 7h-8.5l-.102.007a.75.75 0 0 0 0 1.486l.102.007h8.5l.102-.007A.75.75 0 0 0 17 7.75Zm0 8.5a.75.75 0 0 0-.648-.743l-.102-.007h-8.5l-.102.007a.75.75 0 0 0 0 1.486L7.75 17h8.5l.102-.007A.75.75 0 0 0 17 16.25ZM17 12a.75.75 0 0 0-.648-.743l-.102-.007h-8.5l-.102.007a.75.75 0 0 0 0 1.486l.102.007h8.5l.102-.007A.75.75 0 0 0 17 12Z"/></svg></span>
-                    <p class="top__age-text">Возраст: 22 года</p>
+                    <p class="top__age-text" data-translate="age">Возраст: 22 года</p>
                   </div>
-                </div><a class="top__btn btn" href="/files/document.pdf" download>Скачать</a>
+                </div><a class="top__btn btn" href="/files/document.pdf" download data-translate="download">Скачать</a>
               </div>
               <div class="top__img">
                 <picture> 
@@ -64,8 +65,8 @@
                 </picture>
               </div>
               <div class="education__content"> 
-                <h2 class="education__title">Образование</h2>
-                <p class="education__text">
+                <h2 class="education__title" data-translate="education">Образование</h2>
+                <p class="education__text" data-translate="educationText">
                    «Казанский национальный исследовательский технический университет им. А.Н. Туполева-КАИ» г. Казань 2021-2025 бакалавр: «Электроэнергетика и электротехника»
                   ВКР на тему «Адаптивный круиз контроль в грузовых авто»
                 </p>
@@ -76,25 +77,25 @@
         <section class="work" id="work"> 
           <div class="container"> 
             <div class="work__inner"> 
-              <h2 class="work__title">Опыт работы</h2>
+              <h2 class="work__title" data-translate="work">Опыт работы</h2>
               <div class="work__items"> 
                 <div class="work-item"><span class="work__number">1</span>
-                  <h3 class="work-item__title">«ИКЕА ДОМ» 06.2019-08.2022</h3>
-                  <h3 class="work-item__subtitle">Продавец консультант </h3>
-                  <p class="work-item__text">
+                  <h3 class="work-item__title" data-translate="ikea">«ИКЕА ДОМ» 06.2019-08.2022</h3>
+                  <h3 class="work-item__subtitle" data-translate="worker1">Продавец консультант </h3>
+                  <p class="work-item__text" data-translate="workDesk1">
                     Консультирование покупателей в отделе сопутствующих товаров и света. Оформление заказ-наряда.
                     Работа во внутреннем документ обороте на базе Excel.
                   </p>
                 </div>
                 <div class="work-item"> <span class="work__number">2</span>
-                  <h3 class="work-item__title">«ИРО РТ» 11.2022–08.2025</h3>
-                  <h3 class="work-item__subtitle">Оператор котельной  </h3>
-                  <p class="work-item__text">Обеспечение бесперебойной работы котлов течения отопительного сезона</p>
+                  <h3 class="work-item__title" data-translate="iro">«ИРО РТ» 11.2022–08.2025</h3>
+                  <h3 class="work-item__subtitle" data-translate="worker2">Оператор котельной  </h3>
+                  <p class="work-item__text" data-translate="workDesk2">Обеспечение бесперебойной работы котлов течения отопительного сезона</p>
                 </div>
                 <div class="work-item"> <span class="work__number">3</span>
                   <h3 class="work-item__title work-bottom">Hard skills:</h3>
-                  <p class="work-item__text work-bottom__text">английский (А2)</p>
-                  <p class="work-item__text work-bottom__text">Excel (сводные таблицы)</p>
+                  <p class="work-item__text work-bottom__text" data-translate="skill1">английский (А2)</p>
+                  <p class="work-item__text work-bottom__text" data-translate="skill2">Excel (сводные таблицы)</p>
                 </div>
               </div>
             </div>
@@ -103,7 +104,7 @@
         <section class="contact" id="contacts">
           <div class="container"> 
             <div class="contact__inner"> 
-              <button class="contact__btn btn" onclick="window.location.href='tel:+79870604538'">Позвонить мне?</button>
+              <button class="contact__btn btn" onclick="window.location.href='tel:+79870604538'" data-translate="call">Позвонить мне?</button>
             </div>
           </div>
         </section>
@@ -111,8 +112,8 @@
       <footer class="footer"> 
         <div class="container"> 
           <div class="footer__inner">
-            <h4 class="footer__title">Галиуллин Камиль Ниязович </h4>
-            <p class="footer__text">Если вам понравилось мое резюме, свяжитесь со мной и давайте работать вместе</p>
+            <h4 class="footer__title" data-translate="footerName">Галиуллин Камиль Ниязович </h4>
+            <p class="footer__text" data-translate="footerText">Если вам понравилось мое резюме, свяжитесь со мной и давайте работать вместе</p>
             <div class="footer__details"> 
               <div class="footer__item"> <span class="icon">
                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 193"><path fill="#4285F4" d="M58.182 192.05V93.14L27.507 65.077L0 49.504v125.091c0 9.658 7.825 17.455 17.455 17.455h40.727Z"/><path fill="#34A853" d="M197.818 192.05h40.727c9.659 0 17.455-7.826 17.455-17.455V49.505l-31.156 17.837l-27.026 25.798v98.91Z"/><path fill="#EA4335" d="m58.182 93.14l-4.174-38.647l4.174-36.989L128 69.868l69.818-52.364l4.669 34.992l-4.669 40.644L128 145.504z"/><path fill="#FBBC04" d="M197.818 17.504V93.14L256 49.504V26.231c0-21.585-24.64-33.89-41.89-20.945l-16.292 12.218Z"/><path fill="#C5221F" d="m0 49.504l26.759 20.07L58.182 93.14V17.504L41.89 5.286C24.61-7.66 0 4.646 0 26.23v23.273Z"/></svg></span><a class="footer__item-text" href="mailto:kamil_gn116@mail.ru">kamil_gn116@mail.ru</a></div>
